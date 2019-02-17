@@ -1,0 +1,35 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	int i,j;
+	
+	for(i=0;i<10;i++)
+	{
+		if(i<5)
+			cout << i*i << endl;
+			
+		else
+			cout << i+5 << endl;
+	}
+	
+	for(i=10;i>1;i--)
+	{
+		if(i>5)
+			cout << i*i << endl;
+			
+		else if(i<5)
+			cout << i+30 << endl;
+	}
+	
+	i=0;
+	
+	while(i<10)
+	{
+		cout << "This is a source code" << endl;
+		i++;
+	}
+	return 0;
+}

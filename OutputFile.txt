@@ -1,0 +1,35 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	int i,j;
+	
+	for(i=0;i<10;i++)  //This is a for loop and the loop  is increamental
+	{
+		if(i<5)//This is a IF condition
+			cout << i*i << endl;
+			
+		else//This is a ELSE condition
+			cout << i+5 << endl;
+	}
+	
+	for(i=10;i>1;i--)  //This is a for loop and the loop is decreamental
+	{
+		if(i>5)//This is a IF condition
+			cout << i*i << endl;
+			
+		else if(i<5)//This is a ELSE IF condition
+			cout << i+30 << endl;
+	}
+	
+	i=0;
+	
+	while(i<10)//This is a while loop
+	{
+		cout << "This is a source code" << endl;
+		i++;
+	}
+	return 0;
+}
