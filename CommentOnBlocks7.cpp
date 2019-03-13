@@ -7,7 +7,7 @@ using namespace std;
 
 int main()
 {
-	ifstream ifile("Input.txt");
+    ifstream ifile("Input.txt");
     string line = "",initial[100],condition[100],whileCondition[100],whileInitial[100],doInitial[100],doCondition[100];
     int m=0,n=0,o=0,p=0,q=0,r=0;
     int is=-1,vs=-1,ds=-1;
@@ -17,10 +17,10 @@ int main()
         line.push_back(ch);
     }
 
-  	char ini[10];
+    char ini[10];
     char con[10];
     int k=0;
-	int forcounter = 0;
+    int forcounter = 0;
 
     for(int i=0; i<line.length(); i++)
     {
@@ -81,7 +81,7 @@ int main()
 
                     i++;
                 }
-				i--;
+		i--;
 
 
                 while(1)
@@ -134,8 +134,7 @@ int main()
                         break;
 
                     i++;
-
-                }
+		}
                 int iov=i;
 
                 while(1)
@@ -145,9 +144,8 @@ int main()
                         con[k] = line[i];
                         k++;
                     }
-
-
-                    if(line[i]=='(')
+			
+		    if(line[i]=='(')
                     {
                         indexOfVariable[variable1]=i;
                         variable1++;
@@ -200,19 +198,19 @@ int main()
                         {
 
                             while(1)
-                			{
-                   				if((line[f]>='0' && line[f]<='9'))
-                        		{
+                	   {
+                   		if((line[f]>='0' && line[f]<='9'))
+                        	{
                             		ini[k] = line[f];
                             		k++;
-                        		}
+                        	}
 
-                    			if(line[f]==',' || line[f]==';')
-                        			break;
+                    		if(line[f]==',' || line[f]==';')
+                        		break;
 
-                    			else
-                        			f++;
-                			}
+                    		else
+                        		f++;
+                	    }
 
                         }
 
@@ -334,19 +332,19 @@ int main()
                         {
 
                             while(1)
-                			{
-                   				if((line[f]>='0' && line[f]<='9'))
-                        		{
+                	    {
+                   		if((line[f]>='0' && line[f]<='9'))
+                        	{
                             		ini[k] = line[f];
                             		k++;
-                        		}
+                        	}
 
-                    			if(line[f]==',' || line[f]==';')
-                        			break;
+                    		if(line[f]==',' || line[f]==';')
+                        		break;
 
-                    			else
-                        			f++;
-                			}
+                    		else
+                        		f++;
+                	    }
                         }
                     }
                 }
