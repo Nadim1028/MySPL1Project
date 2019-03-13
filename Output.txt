@@ -1,0 +1,70 @@
+#include<iostream>
+
+using namespace std;
+
+double Division(double g,double h)//The name of the function is **Division**.The retrun type of the function is double
+{
+    double c=a/b;
+}
+
+
+
+void sum(int p,int q)//The name of the function is **sum**.The retrun type of the function is void
+{
+    int x=p+q;
+}
+
+
+
+int main()This is the main function.//The name of the function is **main**.The retrun type of the function is integer
+{
+
+    int a=0,b=1,k=10,l =20,m=30;
+    double g,h;
+    int p,q;
+
+    Division(g,h);
+    sum(p,q);
+
+    while(k<100)//This is a while loop which starts with 10 and ends with 100
+    {
+        cout << " SPL code" << endl;
+        k++;
+    }
+
+    while(l<200)//This is a while loop which starts with 20 and ends with 200
+    {
+        cout << " This is a code" << endl;
+        l++;
+    }
+
+    for(i=1;i<100;i++)//This is a for loop which starts with 1 and ends with 100.The for loop is incremental.
+    {
+        cout << i+i << endl;
+    }
+
+    for(j=2;j<200;j--)//This is a for loop which starts with 2 and ends with 200.The for loop is decremental.
+    {
+        cout << j*j << endl;
+    }
+
+    do//This is a do while loop which starts with 30 and ends with 20
+    {
+        int x=a+3;
+        a++;
+    }
+    while( a < 20 );
+
+    do//This is a do while loop which starts with 1 and ends with 20
+    {
+        int p=3*b;
+        b++;
+    }
+    while(b<20);
+
+
+    return 0;
+
+
+}
+
