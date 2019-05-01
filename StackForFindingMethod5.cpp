@@ -54,7 +54,7 @@ int main()
 
     fstream file;
     file.open( "Input.cpp", fstream::in | fstream::out | fstream::app );
-    ofstream ofile("Output.cpp");
+    ofstream ofile("1.cpp");
 
     while(!file.eof())
     {
@@ -63,7 +63,7 @@ int main()
     }
 
 	int funcNumber,indxG1,indxG2,indxG3;
-    int found1[10],found2[10];
+    int found1[100],found2[100];
 
     for(funcNumber=0;funcNumber<i;funcNumber++)
     {
@@ -71,7 +71,7 @@ int main()
         found1[funcNumber]=totalString.find(functionSign[funcNumber]);
 
         stack <char> stack1;
-        int found2[10];
+        //found2[10];
 
         for(int i=found1[funcNumber];i<totalString.length();i++)
         {
@@ -139,7 +139,7 @@ int main()
             sfp++;
         }
 
-        else if(p[i]==' ' || p[i]=='(' || p[i]==',' || p[i]==')')
+        else if((p[i]==' ' && p[i-1]!=',')  || p[i]=='(' || p[i]==',' || p[i]==')')
         {
             for(int j=0;j<sfp;j++)
             {
@@ -182,5 +182,4 @@ int main()
 
     return 0;
 }
-
 
